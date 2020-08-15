@@ -1,4 +1,4 @@
-var css = require('css')
+const css = require('css')
 
 /**
  * Return an AST object converted from a CSS string
