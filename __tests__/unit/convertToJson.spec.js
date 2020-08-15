@@ -3,7 +3,7 @@ const convertToJson = require('../../src/utilities/convertToJson')
 describe('convertToJson', () => {
   test('Returns a valid JSON object to manipulate when valid CSS supplied', () => {
     const jsonVerified = typeof convertToJson('.test { background: white; }') === 'object'
-    // console.log(JSON.stringify(convertToJson(sampleCSSString)))
+    // console.log(JSON.stringify(convertToJson('.test { background: white; }')))
     expect(jsonVerified).toBe(true)
   })
   test('Returns an error when invalid CSS supplied', () => {
